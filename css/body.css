@@ -1,0 +1,60 @@
+body 
+  {
+  margin: 0;
+  padding: 0px;
+  background-color: lightgreen;
+  font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+<link rel="stylesheet" href="body.css">
+
+h1 
+  {
+  margin-top: 3;
+  margin-bottom: 0;
+  }
+
+.topnav 
+  {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #156322;
+  overflow: hidden;
+  font-size: 20px;
+  height: 25px
+  }
+
+.topnav a
+  {
+  padding: 12px;
+  color: DarkBlue;
+  text-align: left;
+  }
+
+  body::before 
+  {
+	content: "";
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 120px;
+    z-index: -2;
+    background-image: url("../images/konqi.png") !important;
+    background-repeat: repeat-x !important;
+    transform: none; 
+    transform-origin: none;
+    background-size: auto 120px !important; 
+    animation: sLeft 3s linear infinite;
+	}
+	
+	@keyframes sLeft 
+	{
+    from { background-position: 0 0; }
+    to { background-position: -72px 0; }
+    	}
+
+
+
